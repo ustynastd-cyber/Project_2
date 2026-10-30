@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f8f2" />
+    <meta name="description" content="Грай, думай і відпочивай — мініігри для гарного настрою." />
+    <title>Граймо — ігри для гарного настрою</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="1.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Граймо — на головну">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>граймо<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Головна навігація">
+        <a href="#games">Ігри</a>
+        <a href="#about">Як це працює</a>
+      </nav>
+      <a class="header-cta" href="#games">Обрати гру <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Твоя маленька перерва</div>
+          <h1>Трохи гри.<br />Багато <span>настрою.</span></h1>
+          <p class="hero-description">Мініігри, щоб перемкнутись, розім’яти мозок і просто класно провести час. Обирай, у що грати сьогодні!</p>
+          <a class="primary-button" href="#games">Знайти свою гру <span aria-hidden="true">↓</span></a>
+          <div class="hero-note"><span class="note-avatars" aria-hidden="true"><i>✦</i><i>☺</i><i>♥</i></span><span>Жодних реєстрацій. Лише гра.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ілюстрація з ігровими символами">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-spark spark-one">✦</div>
+          <div class="art-spark spark-two">✳</div>
+          <div class="art-card card-back"><span>?</span></div>
+          <div class="art-card card-front">
+            <span class="card-caption">сьогодні твій день</span>
+            <span class="card-emoji">🎲</span>
+            <span class="card-footer">кидай кубик!</span>
+          </div>
+          <div class="floating-pill pill-top"><span>🧠</span> час подумати</div>
+          <div class="floating-pill pill-bottom"><span>🍀</span> + гарний настрій</div>
+          <div class="art-small-star">✦</div>
+        </div>
+        <div class="hero-bottom">
+          <span>ПРОСТО. ВЕСЕЛО. УКРАЇНСЬКОЮ.</span>
+          <span class="scroll-hint">Гортай, тут цікаво <span aria-hidden="true">⌄</span></span>
+        </div>
+      </section>
+
+      <section class="games-section" id="games">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Каталог розваг</div>
+            <h2>У що <span>зіграємо?</span></h2>
+          </div>
+          <p>Від швидких дуелей до загадок, над якими<br class="desktop-break" /> приємно помізкувати.</p>
+        </div>
+        <div class="game-tools">
+          <div class="filters" role="group" aria-label="Фільтр ігор">
+            <button class="filter-chip is-active" data-filter="all" type="button">Усі ігри <span>12</span></button>
+            <button class="filter-chip" data-filter="quick" type="button">Швидкі</button>
+            <button class="filter-chip" data-filter="brain" type="button">Для мозку</button>
+            <button class="filter-chip" data-filter="with-friends" type="button">Для двох</button>
+          </div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="game-search" type="search" placeholder="Знайти гру..." aria-label="Знайти гру" />
+            <kbd>⌘ K</kbd>
+          </label>
+        </div>
+
+        <div class="game-grid" id="game-grid">
+          <article class="game-card card-green" data-game="rps" data-categories="quick with-friends" data-search="камінь ножиці папір дуель">
+            <div class="game-card-top"><span class="game-icon">✊</span><span class="tag">дуель</span></div>
+            <h3>Камінь, ножиці, папір</h3>
+            <p>Класика, яка ніколи не набридає. Зможеш перемогти комп’ютер?</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;1 хв</span><button class="play-button" data-open-game="rps" aria-label="Грати в Камінь, ножиці, папір">Грати <span>↗</span></button></div>
+            <span class="card-decoration">✳</span>
+          </article>
+          <article class="game-card card-blue" data-game="guess" data-categories="quick brain" data-search="вгадай число цифри">
+            <div class="game-card-top"><span class="game-icon">🔢</span><span class="tag">на удачу</span></div>
+            <h3>Вгадай число</h3>
+            <p>Я загадав число від 1 до 100. Скільки спроб тобі знадобиться?</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;2 хв</span><button class="play-button" data-open-game="guess" aria-label="Грати у Вгадай число">Грати <span>↗</span></button></div>
+            <span class="card-decoration">#</span>
+          </article>
+          <article class="game-card card-yellow" data-game="word" data-categories="brain" data-search="слово літери анаграма">
+            <div class="game-card-top"><span class="game-icon">🔤</span><span class="tag">словограй</span></div>
+            <h3>Збери слово</h3>
+            <p>Літери трохи переплутались. Розстав їх на місця!</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;2 хв</span><button class="play-button" data-open-game="word" aria-label="Грати у Збери слово">Грати <span>↗</span></button></div>
+            <span class="card-decoration">Aa</span>
+          </article>
+          <article class="game-card card-lilac" data-game="riddle" data-categories="brain" data-search="загадки кмітливість">
+            <div class="game-card-top"><span class="game-icon">💡</span><span class="tag">загадки</span></div>
+            <h3>Загадка дня</h3>
+            <p>Перевір свою кмітливість. Тут усе не так просто, як здається.</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;1 хв</span><button class="play-button" data-open-game="riddle" aria-label="Відгадати загадку">Грати <span>↗</span></button></div>
+            <span class="card-decoration">?</span>
+          </article>
+          <article class="game-card card-peach" data-game="memory" data-categories="brain quick" data-search="пам'ять меморі картки пари">
+            <div class="game-card-top"><span class="game-icon">🧩</span><span class="tag">тренуй пам’ять</span></div>
+            <h3>Знайди пару</h3>
+            <p>Відкривай картки й знаходь однакові. Запам’ятай, де що лежить!</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;2 хв</span><button class="play-button" data-open-game="memory" aria-label="Грати у Знайди пару">Грати <span>↗</span></button></div>
+            <span class="card-decoration">⌘</span>
+          </article>
+          <article class="game-card card-mint" data-game="tictactoe" data-categories="with-friends" data-search="хрестики нулики два гравці">
+            <div class="game-card-top"><span class="game-icon">⭕</span><span class="tag">для двох</span></div>
+            <h3>Хрестики-нулики</h3>
+            <p>Швидка партія з другом або з комп’ютером. Твій хід!</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;2 хв</span><button class="play-button" data-open-game="tictactoe" aria-label="Грати у Хрестики-нулики">Грати <span>↗</span></button></div>
+            <span class="card-decoration">×○</span>
+          </article>
+          <article class="game-card card-sky" data-game="math" data-categories="quick brain" data-search="математика рахунок приклади">
+            <div class="game-card-top"><span class="game-icon">⚡</span><span class="tag">на швидкість</span></div>
+            <h3>Математичний спринт</h3>
+            <p>60 секунд, приклади й ти. Перевір, як швидко рахуєш!</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;1 хв</span><button class="play-button" data-open-game="math" aria-label="Грати у Математичний спринт">Грати <span>↗</span></button></div>
+            <span class="card-decoration">+</span>
+          </article>
+          <article class="game-card card-mint" data-game="reaction" data-categories="quick" data-search="реакція швидкість тест">
+            <div class="game-card-top"><span class="game-icon">🚦</span><span class="tag">перевір себе</span></div>
+            <h3>Тест на реакцію</h3>
+            <p>Дочекайся зеленого сигналу й натисни якомога швидше. Не поспішай!</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;1 хв</span><button class="play-button" data-open-game="reaction" aria-label="Грати у Тест на реакцію">Грати <span>↗</span></button></div>
+            <span class="card-decoration">⚡</span>
+          </article>
+          <article class="game-card card-lilac" data-game="hangman" data-categories="brain" data-search="шибениця вгадай слово літери">
+            <div class="game-card-top"><span class="game-icon">🔠</span><span class="tag">вгадай слово</span></div>
+            <h3>Словесний детектив</h3>
+            <p>Відкривай літери й розгадай слово, поки не скінчилися спроби.</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;2 хв</span><button class="play-button" data-open-game="hangman" aria-label="Грати у Словесний детектив">Грати <span>↗</span></button></div>
+            <span class="card-decoration">?</span>
+          </article>
+          <article class="game-card card-peach" data-game="higherlower" data-categories="quick brain" data-search="вище нижче карти вгадай">
+            <div class="game-card-top"><span class="game-icon">🃏</span><span class="tag">вище чи нижче?</span></div>
+            <h3>Вища чи нижча?</h3>
+            <p>Відгадай, якою буде наступна карта. Скільки влучань набереш?</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;1 хв</span><button class="play-button" data-open-game="higherlower" aria-label="Грати у Вища чи нижча">Грати <span>↗</span></button></div>
+            <span class="card-decoration">♠</span>
+          </article>
+          <article class="game-card card-blue" data-game="chess" data-categories="brain with-friends" data-search="шахи шахмати chess стратегія">
+            <div class="game-card-top"><span class="game-icon">♟️</span><span class="tag">стратегія</span></div>
+            <h3>Шахи</h3>
+            <p>Класична гра на логіку: зіграй білими проти комп’ютера.</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;5 хв</span><button class="play-button" data-open-game="chess" aria-label="Грати у шахи">Грати <span>↗</span></button></div>
+            <span class="card-decoration">♘</span>
+          </article>
+          <article class="game-card card-yellow" data-game="uno" data-categories="quick with-friends" data-search="уно uno карткова гра кольорові карти">
+            <div class="game-card-top"><span class="game-icon">🃏</span><span class="tag">карткова</span></div>
+            <h3>Кольорові карти</h3>
+            <p>Швидка карткова гра в стилі UNO: скидай карти й випередь ботів!</p>
+            <div class="game-card-bottom"><span class="play-time">◷ &nbsp;5 хв</span><button class="play-button" data-open-game="uno" aria-label="Грати у Кольорові карти">Грати <span>↗</span></button></div>
+            <span class="card-decoration">UNO</span>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>Не знайшли такої гри. Спробуй інший запит ✨</p>
+        <div class="bottom-banner"><span class="banner-star">✳</span><div><strong>Уже зіграв у все?</strong><span>Тоді час ще на один раунд 😉</span></div><a href="#games">Обирай гру <span>↗</span></a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark">✳</span><span>граймо<span class="brand-dot">.</span></span></a><span>Зроблено для гарного настрою <span class="footer-heart">♥</span></span><span>© 2025 Граймо</span></footer>
+
+    <dialog class="game-dialog" id="game-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-shell">
+        <div class="dialog-top"><span class="dialog-label"><span class="eyebrow-dot"></span> Час пограти</span><button class="close-dialog" type="button" aria-label="Закрити гру">×</button></div>
+        <h2 id="dialog-title"></h2>
+        <div class="game-content" id="game-content"></div>
+      </div>
+    </dialog>
+  </body>
+</html>
